@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/home/favicon.ico" rel="icon">
-  <link href="img/home/favicon-16x16.png" rel="apple-touch-icon">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon-16x16.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
 
@@ -42,7 +42,7 @@
 
   <!-- ======= Header ======= -->
   <!-- Navbar -->
-  <nav class="navbar navbar-light">
+  <nav id="navMenu" class="navbar navbar-light">
 
     <div class="outer-menu">
    <input class="checkbox-toggle" type="checkbox" />
@@ -82,22 +82,28 @@
   
   <!-- ======= FULL PAGE ======= -->
 
+<div class="contsvg30">
+
+  <img src="img/home/frase30.svg" alt="">
+  
+
+</div>
+
+
+
 <div id="fullpage">
 
   
   <div class="section fp-auto-height-responsive" id="section0">
+
+
 		<div class="intro">
-			<h1>Responsive auto-height</h1>
-			<p>On responsive mode, which will fire with less than 900px width as defined in `responsiveWidth`, this section will become bigger than the viewport as I'm using the class `fp-auto-height-responsive` on the section.</p>
-			<br>
-			<br>
-			<br>
-			<p>
-			Eu nec ferri molestie consequat, vel at alia dolore putant. Labore philosophia ut vix. In vis nostrud interesset appellantur, vis et tation feugiat scripserit. Te nec noster suavitate persecuti. Diceret erroribus cu vix, alii omnes ei sit. Sea an corrumpit patrioque, virtute accumsan nominavi et usu, ex mei dolore vocibus incorrupte. Duo ea saperet tacimates. Sed possim prodesset no, per novum putent doctus ea. Eu mea magna aliquip graecis, pri corpora officiis complectitur ei, lorem saepe consetetur his ad. Meis consulatu ei vis, an altera ocurreret interesset qui. Eu ponderum comprehensam his, case antiopam pri te. Mel ne partem consequat instructior. Ad dicunt malorum sea, ex qui omnes invenire gubergren. Ius cu autem aliquando, pri vide ornatus perpetua an, no has epicuri
-
-
-			</p>
+			
 		</div>
+
+    <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+
+
 	</div>
 
 
@@ -109,15 +115,11 @@
 
 
 
-	    <div class="slide" id="slide1">
-			<div class="intro">
-				<h1>Ideal for small screens</h1>
-			</div>
+	  <div class="slide" id="slide1">
+		
 		</div>
 
-	    <div class="slide" id="slide2">
-			<h1>This example uses responsiveWidth: 900</h1>
-		</div>
+	    
 
 	</div>
 
@@ -127,10 +129,7 @@
 
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1 >Keep it simple!</h1>
-		
-
-      <div class="c" style="background-color: aqua; display: block; width: 200px; height: 200px;" ></div>
+			
     
     
     </div>
@@ -217,6 +216,46 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
+
+
+  <script type="text/javascript">
+		$(document).ready(function() {
+			
+
+				afterLoad: function(anchorLink, index){
+					if(index == 2){
+						$('#iphone3, #iphone2, #iphone4').addClass('active');
+					}
+					$('#infoMenu').toggleClass('whiteLinks', index ==4);
+
+				},
+
+				onLeave: function(index, newIndex, direction){
+					if (index == 3 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 3 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', newIndex == 4);
+ 					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				},
+
+				/*
+				Needed to maintain the fixed position of the element
+				due to problems using translate3d and fixed elements.
+				*/
+				afterRender: function(){
+					$('#navMenu').appendTo('body');
+
+					$('#githubLink, .twitter-share-button').appendTo('body');
+				}
+
+			});
+		});
+	</script>
 
 
 
