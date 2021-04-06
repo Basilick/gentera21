@@ -209,7 +209,7 @@ mark {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #978548;
+  border: 6px solid #CE0159;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -613,6 +613,25 @@ transition: background-size .5s;
  
 }
 
+.navbar-fixed {
+  position: fixed;
+  height: 61px;
+  width: 100%;
+  display: block;
+  background: #ffffff;
+ 
+}
+
+.navbar-fixed .imglogo {
+  
+width: 145px;
+float: right;
+margin-right: 20px;
+
+}
+
+
+
 
 .scroll-down {
   position: absolute;
@@ -701,7 +720,7 @@ background-size: contain;
 }
 .banner__category{
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 20px;
   width: 14px;
   height: 480px;
