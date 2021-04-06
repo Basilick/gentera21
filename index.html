@@ -454,11 +454,12 @@ $( '.imgmenunumb06' ).attr("src","img/menu/06-number-whit.svg");
 
 </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
+
 		$(document).ready(function() {
 			
 
-				afterLoad: function ( anchorLink, index){
+				afterLoad: function (anchorLink, index){
 					if(index == 2){
 						$('#iphone3, #iphone2, #iphone4').addClass('active');
 					}
@@ -466,7 +467,7 @@ $( '.imgmenunumb06' ).attr("src","img/menu/06-number-whit.svg");
 
 				},
 
-				onLeave: function ( index, newIndex, direction){
+				onLeave: function (index, newIndex, direction){
 					if (index == 3 && direction == 'down'){
 						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
 					}
@@ -491,7 +492,7 @@ $( '.imgmenunumb06' ).attr("src","img/menu/06-number-whit.svg");
 
 			});
 
-	</script>
+</script>
 
 
 
