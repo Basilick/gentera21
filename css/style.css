@@ -26,8 +26,7 @@ body {
 
 a {
   font-family: Verdana-Regular;
-  color: #7B6E5F;
-  text-transform: uppercase;
+  color: #272727;
   
 }
 
@@ -306,6 +305,7 @@ mark {
   transition-duration: 0.75s;
 }
 .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+  width: 100vw;
   opacity: 1;
   transition: opacity 0.4s ease 0.4s;
 }
@@ -442,7 +442,242 @@ mark {
   transition: width 0.4s ease;
 }
 
+.outer-menu .menu img {
+  width: 120px;
+display: block;
+margin: auto;
+height: 83px;
 
+}
+
+.outer-menu .menu h3 {
+  padding: 4px 0;
+  font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    font-family: Verdana-Bold;
+}
+
+.back01 {
+  background-color: #CE0359;
+}
+
+.back02 {
+  background-color: #662D89;
+}
+
+.back03 {
+  background-color: #F47F26;
+}
+
+.back04 {
+  background-color: #24AD9E;
+}
+
+.back05 {
+  background-color: #126A92;
+}
+
+.back06 {
+  background-color: #495B6C;
+}
+
+.outer-menu .menu ul {
+  list-style: none;
+  padding-left: 10px;
+  
+}
+
+.outer-menu .menu .conmenu {
+  height: 580px;
+  
+}
+
+.outer-menu .menu .conmenu {
+ 
+  background-size: 0px;
+  background-position: 50%;
+  
+  
+}
+
+.outer-menu .menu .menuback01:hover{
+  background-image: url(../img/menu/backmen01.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+transition: background-size .5s;
+  
+}
+.outer-menu .menu .menuback02:hover{
+  background-image: url(../img/menu/backmen02.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+  transition: background-size .5s;
+  
+}
+.outer-menu .menu .menuback03:hover{
+  background-image: url(../img/menu/backmen03.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+  transition: background-size .5s;
+  
+}
+.outer-menu .menu .menuback04:hover{
+  background-image: url(../img/menu/backmen04.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+  transition: background-size .5s;
+  
+}
+.outer-menu .menu .menuback05:hover{
+  background-image: url(../img/menu/backmen05.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+  transition: background-size .5s;
+  
+}
+.outer-menu .menu .menuback06:hover{
+  background-image: url(../img/menu/backmen06.png);
+  background-repeat: no-repeat;
+  background-size: 230px;
+  background-position: center 0px;
+  transition: background-size .5s;
+  
+}
+
+
+<<<<<<< HEAD
+=======
+
+
+.outer-menu .menu .conmenu .centmarg50{
+  margin: 50% auto;
+  opacity: 0.5;
+  
+}
+
+.outer-menu .menu .conmenu .centmarg50full{
+ 
+  opacity: 1;
+  
+}
+
+
+
+
+.outer-menu .menu #submenu1 {
+  height: 30px;
+  
+}
+
+
+.outer-menu .menu #submenu1 li {
+  float: left;
+  margin-left: 20px;
+  
+}
+
+.outer-menu .menu #submenu2 {
+  height: 30px;
+  float: right;
+}
+
+
+.outer-menu .menu #submenu2 li {
+  float: left;
+  margin-left: 20px;
+  
+}
+
+.outer-menu .menu ul li a {
+  font-size: 14px;
+
+  
+}
+
+.outer-menu .menu ul li a:hover {
+  text-decoration: underline;
+  color: #272727;
+  
+  
+}
+
+
+
+.navbar {
+  position: absolute;
+  z-index: 10001;
+ 
+}
+
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color:#ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  overflow: visible;
+}
+
+.scroll-down .arrow {
+
+position: relative;
+top: -4px;
+margin: 0 auto;
+width: 20px;
+height: 20px;
+background-image: url(../img/home/downarrow.svg);
+background-size: contain;
+
+}
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
+
+.contsvg30 {
+
+  position: absolute;
+    z-index: 1000;
+    left: 200px;
+    top: 105px;
+    width: 750px;
+
+}
+
+
+#section0 {
+  background-image: url(../img/home/bg-slide1.png);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#section1 {
+  background-image: url(../img/home/bg-slide2.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#section2 {
+  background-image: url(../img/home/bg-slide3.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+
+>>>>>>> ali/main
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

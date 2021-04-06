@@ -67,3 +67,5 @@ gsap.to(".yoyo p", {
   yoyo: true, 
   ease: "power2"
 });
+
+gsap.to(".arrow", {y: 12, ease: "power1.inOut", repeat: -1, yoyo: true});
