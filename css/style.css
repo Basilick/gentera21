@@ -29,6 +29,9 @@ a {
   color: #272727;
   
 }
+a strong{
+  font-family: Verdana-Bold;
+}
 
 
 
@@ -58,14 +61,16 @@ p {
  font-size: 16px;
  font-family: Verdana-Regular;
 }
-
+p strong{
+  font-family: Verdana-Bold;
+}
 
 
 p span {
 
- 
 
 }
+
 /* Text styles */
 .title{
   font-size: 100px;
@@ -698,13 +703,51 @@ background-size: contain;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #E4DFCF;
-
-  
- 
+  background: #3C4650;
   width: 100%;
- 
 }
+#footer p{
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+#footer p:last-of-type{
+  margin: 0;
+}
+#footer a{
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom:16px;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+.footercontent{
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footercontent__item{
+  margin-bottom: 20px;
+}
+.footer__rrss{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.footer__rrss a{
+  display: inline-block;
+  margin-right: 24px;
+}
+.footer__divider{
+  display: none;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -857,6 +900,24 @@ quienes-somos-2     Alberto
   .banner__text{
     width: 36%;
     right: 160px;
+  }
+  .footercontent{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footercontent__item{
+    width: 32%;
+  }
+  .footercontent__item:last-of-type{
+    width: 20%;
+  }
+  .footer__divider{
+    background: url(../svg/footer-divider.svg) no-repeat;
+    background-size: 3px 120px;
+    display: block;
+    width: 3px;
+    height: 120px;
   }
 }
 
