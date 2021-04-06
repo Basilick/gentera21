@@ -20,6 +20,7 @@
 body {
  
   background-color: #ffffff;
+  overflow-x: hidden;
   
 }
 
@@ -53,8 +54,8 @@ h3, h4, h5, h6 {
 }
 
 p {
-color: #606064;
- font-size: 18px;
+ color: #606064;
+ font-size: 16px;
  font-family: Verdana-Regular;
 }
 
@@ -64,6 +65,65 @@ p span {
 
  
 
+}
+/* Text styles */
+.title{
+  font-size: 100px;
+  line-height: 110px;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+}
+.underlined-title{
+  font-size: 32px;
+  line-height: 40px;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+  padding: 4px 10px;
+}
+.subtitle{
+  font-size: 36px;
+  line-height: 44px;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+}
+.subtitle-normal{
+  font-size: 24px;
+  line-height: 27px;
+  font-family: Verdana-Bold;
+}
+.small-subtitle{
+  font-size: 22px;
+  line-height: 27px;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+}
+.underlined-text{
+  font-size: 18px;
+  line-height: 34px;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+}
+.underlined-text-normal{
+  font-size: 18px;
+  line-height: 34px;
+  font-family: Verdana-Bold;
+}
+mark {
+  padding: 0.1em 0.4em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+
+/* TYPO COLORS */
+.text-white{
+  color: #ffffff !important;
+}
+.text-orange{
+  color: #f58025 !important;
+}
+.text-magenta{
+  color: #e20177 !important;
 }
 
 
@@ -80,14 +140,20 @@ p span {
 .color-green {
   background-color: #94C13D;
 }
+.color-green-2 {
+  background-color: #24AD9E;
+}
 .color-yellow {
   background-color: #FAEB33;
 }
 .color-orange {
-  background-color: #E95F24;
+  background-color: #f58025;
 }
 .color-red {
   background-color: #0071CE;
+}
+.color-magenta-1 {
+  background-color: #e20177;
 }
 
 .slidervertical {
@@ -485,6 +551,8 @@ transition: background-size .5s;
 }
 
 
+<<<<<<< HEAD
+=======
 
 
 .outer-menu .menu .conmenu .centmarg50{
@@ -609,6 +677,7 @@ background-size: contain;
 
 
 
+>>>>>>> ali/main
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -622,39 +691,163 @@ background-size: contain;
 }
 
 
-
-
 /*--------------------------------------------------------------
 # MOBILE
 --------------------------------------------------------------*/
 
-
-/* #RESPONSIVE - START*/
-/* Landscape */
-@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
-  
-
-
-
+#nuestro_enfoque_social_1{
+  background: url('../images/nuestro-enfoque-social/nuestro-enfoque-social-1.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner__category{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 14px;
+  height: 480px;
+}
+.banner__rectangle{
+  width: 14px;
+  height: 66px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner__category-text{
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 14px;
+  margin-top: 80px;
+  position: relative;
+}
+.banner__category-text p{
+  text-transform: uppercase;
+  text-align: left;
+  transform-origin: left;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.banner__text{
+  position: absolute;
+  bottom: 13%;
+  right: 20px;
+  width: 80%;
+}
+.banner__text h1{
+  color: #ffffff;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding-left: 17px;
+}
+.banner__text h2 span{
+  color: #ffffff;
+  font-family: Verdana-Bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 4px 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.banner__text p{
+  color: #ffffff;
+  padding-left: 17px;
 }
 
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
- 
 
+/*********************************************************************
+carta-presidentes-1     Alberto
+*********************************************************************/
 
+.president-name{
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+.president-position{
+  font-size: 14px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (max-device-width: 680px) and (orientation: portrait) {
-  
+/*********************************************************************
+quienes-somos-2     Alberto
+*********************************************************************/
 
-
+.featured{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 32px 0;
+}
+.featured__item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.featured__item:last-of-type{
+  margin-bottom: 0;
+}
+.featured__image{
+  width: 25%;
+}
+.featured__text{
+  width: 70%;
+  border-bottom: 1px solid #e20177;
+  border-top: 1px solid #e20177;
+  padding: 16px 0;
+}
+.featured__text p{
+  font-size: 18px;
+  line-height: 18px;
+  font-family: Verdana-Bold;
+  color: #e20177;
+}
+.featured__text p:last-of-type{
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Verdana-Regular;
+  color: #606064;
 }
 
-/* #RESPONSIVE - END*/
+/* TABLET PORTRAIT*/
+@media screen and (min-width: 767px){
+  .banner__text{
+    width: 60%;
+    right: 80px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1279px){
+  .banner__text{
+    width: 36%;
+    right: 160px;
+  }
+}
 
 
-
-
-
-/*-END  MOBILE-*/  
-
+@media screen and (min-width: 1439px){
+  .banner__text{
+    width: 24%;
+    right: 160px;
+  }
+}
