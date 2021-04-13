@@ -67,8 +67,15 @@ p strong{
 
 
 p span {
-
-
+  color: #606064;
+  font-size: 14px;
+  line-height: 20px;
+}
+table.blue-table tr:nth-child(odd){
+  background: #ffffff;
+}
+table.blue-table tr:nth-child(even){
+  background: #edeeef;
 }
 
 /* Text styles */
@@ -113,6 +120,42 @@ p span {
   line-height: 34px;
   font-family: Verdana-Bold;
 }
+.section-title{
+  font-family: Verdana-Regular;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  padding: 0 0 0 78px;
+  margin: 0;
+  position: relative;
+}
+.section-title::before{
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 66px;
+  height: 10px;
+}
+.section-title-green::before{
+  background: #00ae9e;
+}
+.section-title-blue::before{
+  background: #006990;
+}
+.section-title-gray::before{
+  background: #4a5b6e;
+}
+.section-title-orange::before{
+  background: #f58025;
+}
+.section-number{
+  font-size: 48px;
+  line-height: 48px;
+  font-family: Verdana-Bold;
+  padding: 0 0 0 78px;
+  margin: 0;
+}
 mark {
   padding: 0.1em 0.4em;
   -webkit-box-decoration-break: clone;
@@ -130,6 +173,15 @@ mark {
 .text-magenta{
   color: #e20177 !important;
 }
+.text-green-1{
+  color: #00ae9e !important;
+}
+.text-blue-1{
+  color: #006990;
+}
+.text-gray-1{
+  color:#4a5b6e;
+}
 
 
 /* colours */
@@ -142,6 +194,10 @@ mark {
 .color-blue {
   background-color: #2BABE2;
 }
+
+.color-blue-1 {
+  background-color: #006990 !important;
+}
 .color-white {
   background-color: #ffffff;
 }
@@ -151,17 +207,29 @@ mark {
 .color-green-2 {
   background-color: #24AD9E;
 }
+.color-green-3{
+  background-color: #00ae9e;
+}
 .color-yellow {
   background-color: #FAEB33;
 }
 .color-orange {
-  background-color: #f58025;
+  background-color: #f58025 !important;
+}
+.color-orange-light-1{
+  background-color: #fff4ec;
 }
 .color-red {
   background-color: #0071CE;
 }
 .color-magenta-1 {
   background-color: #e20177;
+}
+.color-white {
+  background-color: #ffffff;
+}
+.color-gray-1{
+  background: #4a5b6e;
 }
 
 .color-blue-4 {
@@ -1494,25 +1562,31 @@ quienes-somos-2     Alberto
 }
 .featured__image{
   width: 25%;
+  height: 132px;
 }
 .featured__text{
   width: 70%;
+  padding: 16px 0;
+}
+.featured__text-pink{
   border-bottom: 1px solid #e20177;
   border-top: 1px solid #e20177;
-  padding: 16px 0;
+}
+.featured__text-blue{
+  border-bottom: 1px solid #3d6488;
+  border-top: 1px solid #3d6488;
 }
 .featured__text p{
   font-size: 18px;
-  line-height: 18px;
+  line-height: 22px;
   font-family: Verdana-Bold;
-  color: #e20177;
 }
-.featured__text p:last-of-type{
-  margin-bottom: 0;
-  font-size: 16px;
-  line-height: 1.5;
+.featured__text p span{ 
   font-family: Verdana-Regular;
-  color: #606064;
+}
+.featured__text ul{
+  margin: 0 0 0 32px;
+  padding: 0;
 }
 
 /* TABLET PORTRAIT*/
