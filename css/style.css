@@ -414,7 +414,7 @@ mark {
   width: 200vw;
   height: 200vw;
   color: #FEFEFE;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
   border-radius: 50%;
   transition: all 0.4s ease;
   flex: none;
@@ -701,8 +701,8 @@ background-size: contain;
 
   position: absolute;
     z-index: 1000;
-    left: 170px;
-    top: 255px;
+    left: 155px;
+    top: 200px;
     
     width: 750px;
 
@@ -719,7 +719,7 @@ background-size: contain;
 #section0 .contfull01 {
   
   position: relative;
-    top: 170px;
+    top: 110px;
     width: 100%;
 
 }
@@ -731,7 +731,7 @@ background-size: contain;
     padding: 4px 16px;
     margin-bottom: 8px;
     display: inline-block;
-    margin-left: 15%;
+    margin-left: 12%;
     color: #F47F26;
     letter-spacing: 20px;
 
@@ -744,7 +744,7 @@ background-size: contain;
   padding: 4px 16px;
   margin-bottom: 8px;
   display: inline-block;
-  margin-left: 17%;
+  margin-left: 11%;
   color: #ffffff;
   letter-spacing: 4px;
 
@@ -869,7 +869,7 @@ font-weight: 600;
     display: inline-block;
     background: #662D89;
     position: relative;
-    top: 65%;
+    top: 69%;
  
 }
 
@@ -1151,7 +1151,7 @@ font-weight: 600;
     display: inline-block;
     background: #126A92;
     position: relative;
-    top: 65%;
+    top: 69%;
  
 }
 

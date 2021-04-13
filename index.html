@@ -724,14 +724,21 @@ var myFullpage = new fullpage('#fullpage', {
         } */
         afterLoad: function(origin, destination, direction){
 	
-	
-    var leavingSection = this;
 
-//after leaving section 2
+var leavingSection = this;
+
+//var someElement= document.querySelector("#fp-nav .active span:nth-child(2)");
+   // someElement.className += "spandotactive";
+
+    
+
+//after leaving section 1
+
 if(origin.index == 0 && direction =='down'){
   
   $( '#imgfras30' ).attr("src","img/home/frase30-black.svg");
   $( '#lineshambur' ).toggleClass("hambublack");
+  
   
 }
 
@@ -741,7 +748,71 @@ else if(origin.index == 1 && direction == 'up'){
   $( '#lineshambur' ).toggleClass("hambublack");
 
 }
-	}
+
+if(origin.index == 0 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#e20177';
+ 
+
+  
+  
+}
+
+if(origin.index == 1 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#603075';
+ 
+
+  
+  
+}
+
+if(origin.index == 2 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#f58025';
+ 
+
+  
+  
+}
+
+if(origin.index == 3 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#24AD9E';
+ 
+
+  
+  
+}
+
+if(origin.index == 4 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#126A92';
+ 
+
+  
+  
+}
+
+if(origin.index == 5 && direction =='down'){
+  
+  document.querySelector('#fp-nav').querySelector('.active span:nth-child(2)').style.background = '#495B6C';
+ 
+}
+
+if(origin.index !== 0 && direction =='up'){
+  
+  $( '#imgfras30' ).attr("src","img/home/frase30.svg");
+  $( '#lineshambur' ).removeClass("hambublack");
+  
+  
+}
+
+
+
+
+
+ }
   
   
         
