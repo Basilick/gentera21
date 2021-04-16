@@ -64,7 +64,7 @@ ol li{
 
 p {
  color: #606064;
- font-size: 16px;
+ font-size: 14px;
  font-family: Verdana-Regular;
 }
 p strong{
@@ -893,15 +893,21 @@ background-size: contain;
     display: inline-block;
     letter-spacing: 5px;
     color: #ffffff;
-
+ 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
 
 }
 
 #section1 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 
@@ -989,14 +995,23 @@ font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
 
+    
 }
 
 #section2 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+
+  padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 
@@ -1083,14 +1098,23 @@ font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
+
 
 }
 
 #section3 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+
+  padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 
@@ -1177,14 +1201,23 @@ font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
+
 
 }
 
 #section4 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+
+  padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 
@@ -1271,14 +1304,23 @@ font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
+
 
 }
 
 #section5 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+
+  padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 
@@ -1365,14 +1407,23 @@ font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
 
+    position: relative;
+    right: -130%;
+    opacity: 0;
+    transition: all 1s ease;
+
 
 }
 
 #section6 .txtdescrip {
   
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 30px;
+
+  padding-right: 30px;
+  opacity: 0;
+  transition: all 1s ease;
     
 }
 

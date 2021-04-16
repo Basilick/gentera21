@@ -69,3 +69,34 @@ gsap.to(".yoyo p", {
 });
 
 gsap.to(".arrow", {y: 12, ease: "power1.inOut", repeat: -1, yoyo: true});
+
+const box = document.querySelector('#contsvg30')
+
+const box1 = document.querySelector('#section0')
+
+const box3 = document.querySelector('h2.color-white')
+
+const box4 = document.querySelector('p.txtinforme')
+
+
+
+
+const tl = new TimelineMax({})
+tl.from(box1, 1, {
+ 
+  opacity: 0
+})
+tl.from(box, .8, {
+  y: 100,
+  opacity: 0
+})
+
+tl.from(box3, .9, {
+  y: 100,
+  opacity: 0
+})
+
+tl.from(box4, 1, {
+  y: 100,
+  opacity: 0
+})
