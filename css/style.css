@@ -56,6 +56,12 @@ h3, h4, h5, h6 {
 
 }
 
+ol li{
+  color: #606064;
+  font-size: 16px;
+  font-family: Verdana-Regular; 
+}
+
 p {
  color: #606064;
  font-size: 14px;
@@ -182,6 +188,9 @@ mark {
 .text-gray-1{
   color:#4a5b6e;
 }
+.text-purple-1{
+  color:#652d89;
+}
 
 
 /* colours */
@@ -210,6 +219,9 @@ mark {
 .color-green-3{
   background-color: #00ae9e;
 }
+.color-green-4{
+  background: #e2f5ee;
+}
 .color-yellow {
   background-color: #FAEB33;
 }
@@ -231,13 +243,20 @@ mark {
 .color-gray-1{
   background: #4a5b6e;
 }
-
 .color-blue-4 {
   background-color: #126A92;
 }
-
 .color-grey-4 {
   background-color: #495B6C;
+}
+.color-purple {
+  background-color: #652d89;
+}
+.color-purple-2 {
+  background-color: #e3e3ed;
+}
+.color-pink-1{
+  background: #fdf0f2;
 }
 
 
@@ -1513,6 +1532,17 @@ font-weight: 600;
   position: relative;
 }
 
+#desempeno-0 {
+  background: url('../img/desempeno/desempeno.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#desempeno-3 {
+  background: linear-gradient(180deg, #e2f5ee 0%, #e2f5ee 35%, #e3e3ed 35%, #e3e3ed 100%);
+}
+
 #nuestra-gente-0 {
   background: url('../img/nuestra-gente/nuestra-gente-sli.png') no-repeat center;
   background-size: cover;
@@ -1679,11 +1709,111 @@ quienes-somos-2     Alberto
   padding: 0;
 }
 
+/*********************************************************************
+contacto-0     Alberto
+*********************************************************************/
+#contacto-0 {
+  background: url('../img/desempeno-financiero/bg-informacion-corporativa.png') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 24px 24px 24px;
+}
+#contacto-0 p, #contacto-0 a{
+  color: #ffffff;
+}
+#contacto-0 a{
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.contacto__title{
+  /* position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+   */
+  width: 100%;
+  margin-bottom: 24px;
+}
+.contacto__legals{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.social-item a{
+  width: 100%;
+  background-size: 32px;
+  padding-left: 42px;
+  line-height: 32px;
+}
+.gentera-site{
+  font-size: 24px;
+  font-family: Verdana-Bold;
+  padding-left: 0px !important;
+}
+a.social-twitter{
+  background: url(../svg/ico-twitter-social.svg) no-repeat;
+}
+a.social-facebook{
+  background: url(../svg/ico-facebook-social.svg) no-repeat;
+}
+a.social-instagram{
+  background: url(../svg/ico-instagram-social.svg) no-repeat;
+}
+a.social-linkedin{
+  background: url(../svg/ico-linkedin-social.svg) no-repeat;
+}
+
+
 /* TABLET PORTRAIT*/
 @media screen and (min-width: 767px){
   .banner__text{
     width: 60%;
     right: 80px;
+  }
+  #desempeno-3 {
+    background: linear-gradient(90deg, #e2f5ee 50%, #e3e3ed 50%);
+  }
+  #contacto-0{
+    height: 100vh;
+  }
+  .contacto__legals, .contacto__social{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1023px){
+  .contacto__legals{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .legals-divider{
+    background: url('../svg/contacto-divider.svg') no-repeat;
+    width: 5px;
+    height: 170px;
+    margin: 0 24px;
+  }
+  .contacto__social {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+    text-align: left;
+  }
+  .social-item{
+    display: flex;
+  }
+  .contacto__title{
+    margin-bottom: 80px;
   }
 }
 
@@ -1692,6 +1822,9 @@ quienes-somos-2     Alberto
   .banner__text{
     width: 36%;
     right: 160px;
+  }
+  .contacto__social {
+    width: 54%;
   }
   .footercontent{
     flex-direction: row;
@@ -1718,5 +1851,11 @@ quienes-somos-2     Alberto
   .banner__text{
     width: 24%;
     right: 160px;
+  }
+  .contacto__title{
+    max-width: 1200px;
+  }
+  .contacto__social {
+    width: 39%;
   }
 }
