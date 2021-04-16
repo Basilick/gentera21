@@ -69,7 +69,9 @@
  
            <div class="listmenu01 centmarg50">
              <img src="img/menu/01-number.svg" alt="" class="imgmenunumb01">
-             <h3 class="back01">Quiénes Somos</h3>
+             <a href="quienes-somos.html" class="btnprinh3">
+              <h3 class="back01">Quiénes Somos</h3>
+            </a>
              <ul>
               <li> <a href="quienes-somos.html?scrollTo=quienes-somos-1">» Gentera y sus empresas</a> </li>
               <li><a href="quienes-somos.html?scrollTo=quienes-somos-2">» Nuestro propósito</a></li>
@@ -86,18 +88,19 @@
  
            <div class="listmenu02 centmarg50">
            <img src="img/menu/02-number.svg" alt="" class="imgmenunumb02">
- 
-           <h3 class="back02">Desempeño</h3>
+           <a href="desempeno.html" class="btnprinh3">
+            <h3 class="back02">Desempeño</h3>
+            </a>
  
            <ul>
              
-            <li> <a href="#">» Modelo de negocio</a> </li>
-            <li><a href="#">» Compartamos</a></li>
-            <li><a href="#">» ConCrédito</a></li>
-            <li><a href="#">» Aterna</a></li>
-            <li><a href="#">» Yastás </a></li>
-            <li><a href="#">» Protección al cliente</a></li>
-            <li> <a href="#">» Educación financiera</a> </li>
+            <li> <a href="desempeno.html?scrollTo=desempeno-1">» Modelo de negocio</a> </li>
+            <li><a href="desempeno.html?scrollTo=desempeno-2">» Compartamos</a></li>
+            <li><a href="desempeno.html?scrollTo=desempeno-3">» ConCrédito</a></li>
+            <li><a href="desempeno.html?scrollTo=desempeno-3">» Aterna</a></li>
+            <li><a href="desempeno.html?scrollTo=desempeno-3">» Yastás </a></li>
+            <li><a href="desempeno.html?scrollTo=desempeno-4">» Protección al cliente</a></li>
+            <li> <a href="desempeno.html?scrollTo=desempeno-5">» Educación financiera</a> </li>
  
            </ul>
          </div>
@@ -109,8 +112,9 @@
            
            <div class="listmenu03 centmarg50">
            <img src="img/menu/03-number.svg" alt="" class="imgmenunumb03">
- 
-           <h3 class="back03">Nuestra gente</h3>
+           <a href="nuestra-gente.html" class="btnprinh3">
+            <h3 class="back03">Nuestra gente</h3>
+            </a>
  
            <ul>
  
@@ -131,8 +135,9 @@
  
            <div class="listmenu04 centmarg50">
            <img src="img/menu/04-number.svg" alt="" class="imgmenunumb04">
- 
-           <h3 class="back04">Vocación social</h3>
+           <a href="vocacion-social.html" class="btnprinh3">
+            <h3 class="back04">Vocación social</h3>
+            </a>
  
            <ul>
  
@@ -150,8 +155,9 @@
  
            <div class="listmenu05 centmarg50">
            <img src="img/menu/05-number.svg" alt="" class="imgmenunumb05">
- 
-           <h3 class="back05">Sostenibilidad</h3>
+           <a href="sostenibilidad.html" class="btnprinh3">
+            <h3 class="back05">Sostenibilidad</h3>
+            </a>
  
            <ul>
  
@@ -173,8 +179,9 @@
  
            <div class="listmenu06 centmarg50">
            <img src="img/menu/06-number.svg" alt="" class="imgmenunumb06">
- 
-           <h3 class="back06">Desempeño Financiero</h3>
+           <a href="desempeno-financiero.html" class="btnprinh3">
+            <h3 class="back06">Desempeño Financiero</h3>
+            </a>
  
            <ul>
  
@@ -195,7 +202,7 @@
             <li><a href="#">Acerca del informe</a></li>
             <li><a href="#">Anexos</a></li> 
             <li><a href="#">Índice de Contenidos GRI y SASB </a></li>
-            <li><a href="#">Contacto </a></li> 
+            <li><a href="contacto.html">Contacto </a></li> 
             
              
            </ul>
@@ -369,6 +376,109 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
+
+  <script >
+  
+
+    $(document).ready(function () {
+        $('.menuback01').hover(function () {
+            $('.listmenu01').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu01').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback01").hover(function() {
+$( '.imgmenunumb01' ).attr("src","img/menu/01-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb01' ).attr("src","img/menu/01-number.svg");
+});
+});
+
+    $(document).ready(function () {
+        $('.menuback02').hover(function () {
+            $('.listmenu02').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu02').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback02").hover(function() {
+$( '.imgmenunumb02' ).attr("src","img/menu/02-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb02' ).attr("src","img/menu/02-number.svg");
+});
+});
+
+    $(document).ready(function () {
+        $('.menuback03').hover(function () {
+            $('.listmenu03').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu03').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback03").hover(function() {
+$( '.imgmenunumb03' ).attr("src","img/menu/03-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb03' ).attr("src","img/menu/03-number.svg");
+});
+});
+
+    $(document).ready(function () {
+        $('.menuback04').hover(function () {
+            $('.listmenu04').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu04').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback04").hover(function() {
+$( '.imgmenunumb04' ).attr("src","img/menu/04-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb04' ).attr("src","img/menu/04-number.svg");
+});
+});
+
+    $(document).ready(function () {
+        $('.menuback05').hover(function () {
+            $('.listmenu05').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu05').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback05").hover(function() {
+$( '.imgmenunumb05' ).attr("src","img/menu/05-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb05' ).attr("src","img/menu/05-number.svg");
+});
+});
+
+    $(document).ready(function () {
+        $('.menuback06').hover(function () {
+            $('.listmenu06').addClass('centmarg50full');
+        }, function () {
+            $('.listmenu06').removeClass('centmarg50full');
+        });
+    });
+
+    $(document).ready(function(){
+$(".menuback06").hover(function() {
+$( '.imgmenunumb06' ).attr("src","img/menu/06-number-whit.svg");
+}, function() {
+  $( '.imgmenunumb06' ).attr("src","img/menu/06-number.svg");
+});
+});
+
+
+
+</script>
 
 
 

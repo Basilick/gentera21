@@ -18,7 +18,7 @@
 
 
 body {
- 
+  color: #5f6061;
   background-color: #ffffff;
   overflow-x: hidden;
   
@@ -571,6 +571,18 @@ margin: auto;
 height: 83px;
 
 }
+.outer-menu .menu .btnprinh3 {
+
+  color: #ffffff;
+
+}
+
+.outer-menu .menu .btnprinh3:hover {
+
+  text-decoration: none;
+  
+}
+
 
 .outer-menu .menu h3 {
   padding: 4px 0;
@@ -692,6 +704,8 @@ transition: background-size .5s;
 
 .outer-menu .menu #submenu1 {
   height: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   
 }
 
@@ -806,7 +820,7 @@ background-size: contain;
 #section0 .contfull01 {
   
   position: relative;
-    top: 110px;
+    top: 130px;
     width: 100%;
 
 }
@@ -841,7 +855,7 @@ background-size: contain;
   
  width: 200px;
  display: block;
- margin-top: 3%;
+ margin-top: 6%;
  margin-left: 3%;
   
 }
@@ -1482,7 +1496,7 @@ font-weight: 600;
   font-size: 12px;
   line-height: 20px;
   color: #ffffff;
-  margin-bottom:16px;
+  margin-bottom:8px;
   padding: 0;
   text-decoration: none;
   display: inline-block;
@@ -1732,6 +1746,8 @@ contacto-0     Alberto
   margin-bottom: 16px;
   display: inline-block;
   cursor: pointer;
+  background-size: 23px;
+  background-position: center left;
 }
 .contacto__title{
   /* position: absolute;
@@ -1750,7 +1766,7 @@ contacto-0     Alberto
 .social-item a{
   width: 100%;
   background-size: 32px;
-  padding-left: 42px;
+  padding-left: 30px;
   line-height: 32px;
 }
 .gentera-site{
