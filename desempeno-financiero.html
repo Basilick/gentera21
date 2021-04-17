@@ -22,7 +22,7 @@
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
  
-  <!-- <link rel="stylesheet" href="bootstrap/mdb.css"> -->
+  <link rel="stylesheet" href="bootstrap/mdb.css">
   <link href="fonts/icofont/icofont.min.css" rel="stylesheet">
   <link href="fonts/boxicons/css/boxicons.min.css" rel="stylesheet">
   
@@ -60,7 +60,7 @@
             <ul id="submenu1">
               <li><a href="carta-de-nuestros-presidentes.html">Carta de nuestros Presidentes</a></li>
               <li><a href="carta-de-nuestro-director-general.html">Carta de nuestro Director General</a></li> 
-              
+              <li><a href="pdfs/IA_Gentera_2020.pdf" target="_blank">Descargar Informe Anual Gentera 2020</a></li> 
             </ul>
  
           </div>
@@ -199,9 +199,9 @@
          <div class="col-lg-12">
            <ul id="submenu2">
        
-            <li><a href="#">Acerca del informe</a></li>
-            <li><a href="#">Anexos</a></li> 
-            <li><a href="#">Índice de Contenidos GRI y SASB </a></li>
+            <li><a href="pdfs/Acerca_este_informe_2020.pdf" target="_blank">Acerca del informe</a></li>
+            <li><a href="pdfs/Anexos_2020_Gentera.pdf" target="_blank">Anexos</a></li> 
+            <li><a href="pdfs/IA_TABLA_GRI_2020.pdf" target="_blank">Índice de Contenidos GRI y SASB </a></li>
             <li><a href="contacto.html">Contacto </a></li> 
             
              
@@ -228,12 +228,12 @@
   </div>    
   <div class="banner__text">
    
-      <h2><span class="color-grey-4"> TRABAJANDO</span></h2>
-      <h2><span class="color-grey-4">CON HONESTIDAD</span></h2>
-        <h2><span class="color-grey-4">Y TRANSPARENCIA</span></h2>
+      <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s"><span class="color-grey-4"> TRABAJANDO</span></h2>
+      <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s"><span class="color-grey-4">CON HONESTIDAD</span></h2>
+        <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s"><span class="color-grey-4">Y TRANSPARENCIA</span></h2>
       
          
-      <p>Desde hace tres décadas guiamos nuestras acciones con honestidad y transparencia, generando valor genuino para nuestros clientes, colaboradores, sus familias y la sociedad.</p>
+      <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s">Desde hace tres décadas guiamos nuestras acciones con honestidad y transparencia, generando valor genuino para nuestros clientes, colaboradores, sus familias y la sociedad.</p>
   </div> 
 </div>
 
@@ -269,11 +269,32 @@
             <p>Todo lo anterior es resultado de que en Gentera tenemos un propósito claro y un equipo comprometido y responsable con las capacidades de la institución para hacer frente a cualquier reto que se presente. Reiteramos la similitud que tenemos con nuestros clientes al encontrar en las adversidades oportunidades, lo hemos aprendido de ellos y seguiremos trabajando por y para ellos.</p>
         </div>
         <div class="col-12 col-lg-3">            
-            <img src="img/desempeno-financiero/informacion-para-inversionistas.png" alt="Emisiones de deuda">
+            <img src="img/desempeno-financiero/informacion-para-inversionistas.png" alt="Emisiones de deuda" class=" wow pulse" data-wow-duration="1s" data-wow-delay="1.2s">
         </div>
     </div>
 </div>
 
+
+<div id="contnavinter" class="container-fluid py-3">
+  <div class="container">
+  <div class="row">
+    <div class="col-6 text-left">
+
+      
+        <p><a href="sostenibilidad.html"><i class="fal fa-arrow-to-left"></i> Sostenibilidad</a></p>
+    
+
+    </div>
+    <div class="col-6 text-right">
+      
+      
+        <p><a href="index.html">Inicio <i class="fal fa-arrow-to-right"></i></a> </p>
+    
+      
+    </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -316,7 +337,7 @@
 
     <div class="row">
       <div class="col-12">
-        <p>Gentera presenta su <strong>Informe Anual y de Sustentabilidad 2020</strong> como un medio para dar a conocer el desempeño que ha tenido durante el periodo comprendido del 1º de enero al 31 de diciembre de 2020.</p>
+        <p class="txtlegend">Gentera presenta su <strong>Informe Anual y de Sustentabilidad 2020</strong> como un medio para dar a conocer el desempeño que ha tenido durante el periodo comprendido del 1º de enero al 31 de diciembre de 2020.</p>
       </div>
     </div>
     
@@ -330,6 +351,12 @@
 
   <!-- JS Files -->
 
+  <script>
+    var wows = document.getElementsByClassName('wow')
+    for (i = 0; i < wows.length; i++){
+    wows[i].style.visibility ='hidden';
+    }
+  </script>
 
 
   <script src="js/fontjs/fa-brands.js"></script>
@@ -349,7 +376,7 @@
   <script src="js/venobox/venobox.min.js"></script>
   <script src="js/owl.carousel/owl.carousel.min.js"></script>
  
-  <!-- <script src="js/mdb.min.js"></script> -->
+  <script src="js/mdb.min.js"></script>
 
   <!-- Touch Swipe -->
 	<script src="paradise/js/touchSwipe.js"></script>
@@ -376,6 +403,12 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
+
+  <script>
+    $( document ).ready(function() {
+      new WOW().init();
+    });
+  </script>
 
   <script >
   

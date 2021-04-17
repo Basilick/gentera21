@@ -24,6 +24,10 @@ body {
   
 }
 
+strong {
+   font-weight: bold;
+}
+
 a {
   font-family: Verdana-Regular;
   color: #272727;
@@ -58,7 +62,7 @@ h3, h4, h5, h6 {
 
 ol li{
   color: #606064;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Verdana-Regular; 
 }
 
@@ -705,7 +709,10 @@ transition: background-size .5s;
 .outer-menu .menu #submenu1 {
   height: 30px;
   margin-left: 20px;
+ 
+  position: relative;
   margin-bottom: 20px;
+  top: -39px;
   
 }
 
@@ -1478,13 +1485,43 @@ font-weight: 600;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+#contnavinter {
+
+  background-color: #f7f7f7;
+  
+}
+
+
+
+#contnavinter p {
+
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #e20177;
+}
+
+#contnavinter a {
+
+color: #3f3f3f;
+}
+
+#contnavinter a:hover {
+
+  text-decoration: none;
+  color:#e20177;
+
+}
+
+
+
 #footer {
   background: #3C4650;
   width: 100%;
 }
 #footer p{
   font-size: 12px;
-  line-height: 20px;
+  line-height: 16px;
   color: #ffffff;
   margin: 0 0 8px 0;
   padding: 0;
@@ -1492,6 +1529,15 @@ font-weight: 600;
 #footer p:last-of-type{
   margin: 0;
 }
+
+#footer p.txtlegend{
+
+  font-size: 10px;
+
+
+}
+
+
 #footer a{
   font-size: 12px;
   line-height: 20px;
@@ -1873,5 +1919,12 @@ a.social-linkedin{
   }
   .contacto__social {
     width: 39%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wow{
+      animation-name: none !important;
+      visibility: visible !important;
   }
 }
