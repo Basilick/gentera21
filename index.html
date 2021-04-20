@@ -50,7 +50,7 @@
    <div class="hamburger">
      <div id="lineshambur"></div>
    </div>
-   <div class="menu">
+   <div class="menu scrollable-element">
      <div class="container-fluid">
        <div class="row">
          <div class="col-lg-12">
@@ -717,12 +717,16 @@ $( '.imgmenunumb06' ).attr("src","img/menu/06-number-whit.svg");
 
 <script type="text/javascript">
 
+  
+
+
 
 var myFullpage = new fullpage('#fullpage', {
         anchors: ['index1', 'index2', 'index3', 'index4', 'index5', 'index6', 'index7'],
         // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'right',
+        normalScrollElements: '.scrollable-element',
       /*   navigationTooltips: ['First page', 'Second page', 'Third and last page'],
         responsiveWidth: 900,
         afterResponsive: function(isResponsive){
